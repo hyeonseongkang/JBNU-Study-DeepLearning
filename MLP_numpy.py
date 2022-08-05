@@ -37,7 +37,7 @@ print(softmax(a))
 
 X = np.random.rand(100)
 Y = 0.2 * X * 0.5
-print(X)
+
 def plot_prediction(pred, y):
   plt.figure(figsize=(8, 6))
   plt.scatter(X, Y)
@@ -50,7 +50,7 @@ W = np.random.uniform(-1, 1)
 # W1 = np.random.uniform(-1, 1)
 # W2 = np.random.uniform(-1, 1)
 b = np.random.uniform(-1, 1)
-
+print('W: ', W, 'b: ', b)
 learning_rate = 0.7
 
 for epoch in range(100):
@@ -71,6 +71,7 @@ for epoch in range(100):
   # W, b 갱신
   W = W - w_grad
   b = b - b_grad
+  print(epoch, 'W: ', W, 'b: ', b, 'error: ', error)
 
   if epoch % 5 == 0:
     Y_pred = W * X + b
