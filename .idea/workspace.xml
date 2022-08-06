@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2882b8aa-7309-4424-afaa-052b47d0b4cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SGD_numpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLP_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLP_numpy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.SGD_numpy">
+  <component name="RunManager" selected="Python.MLP">
+    <configuration name="MLP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jbnu-study-deeplearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MLP_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jbnu-study-deeplearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MLP" />
         <item itemvalue="Python.SGD_numpy" />
         <item itemvalue="Python.MLP_numpy" />
         <item itemvalue="Python.regression_numpy" />
@@ -119,30 +139,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="929" height="507" key="GridCell.Tab.0.bottom" timestamp="1659711613102">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="777" height="379" key="GridCell.Tab.0.bottom" timestamp="1659793831610">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="929" height="382" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659690187620" />
-    <state width="929" height="375" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659692592808" />
-    <state width="929" height="507" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1659711613102" />
-    <state width="929" height="507" key="GridCell.Tab.0.center" timestamp="1659711613088">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="699" height="399" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659775912843" />
+    <state width="777" height="379" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659793831610" />
+    <state width="929" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1659768875990" />
+    <state width="1899" height="507" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1659712922313" />
+    <state width="777" height="379" key="GridCell.Tab.0.center" timestamp="1659793831609">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="929" height="382" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659690187619" />
-    <state width="929" height="375" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659692592806" />
-    <state width="929" height="507" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1659711613088" />
-    <state width="929" height="507" key="GridCell.Tab.0.left" timestamp="1659711613071">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="699" height="399" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659775912842" />
+    <state width="777" height="379" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659793831609" />
+    <state width="929" height="399" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1659768875989" />
+    <state width="1899" height="507" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1659712922304" />
+    <state width="777" height="379" key="GridCell.Tab.0.left" timestamp="1659793831609">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="929" height="382" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659690187618" />
-    <state width="929" height="375" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659692592805" />
-    <state width="929" height="507" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1659711613071" />
-    <state width="929" height="507" key="GridCell.Tab.0.right" timestamp="1659711613093">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="699" height="399" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659775912842" />
+    <state width="777" height="379" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659793831609" />
+    <state width="929" height="399" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1659768875989" />
+    <state width="1899" height="507" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1659712922303" />
+    <state width="777" height="379" key="GridCell.Tab.0.right" timestamp="1659793831610">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="929" height="382" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659690187620" />
-    <state width="929" height="375" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659692592807" />
-    <state width="929" height="507" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1659711613093" />
+    <state width="699" height="399" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1659775912843" />
+    <state width="777" height="379" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1659793831610" />
+    <state width="929" height="399" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1659768875989" />
+    <state width="1899" height="507" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1659712922304" />
     <state width="929" height="375" key="GridCell.Tab.1.bottom" timestamp="1659692592811">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
