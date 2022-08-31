@@ -43,15 +43,21 @@ epochs = 100
 weights_1 = 0.2 * rng.random((784, 100)) - 0.1
 weights_2 = 0.2 * rng.random((100, 10)) - 0.1
 
+save_training_loss = []
+save_training_accurate_pred = []
+save_test_loss = []
+save_test_accurate_pred = []
+
 for epoch in range(epochs):
     training_loss = 0.0
+    training_accurate_predictions = 0
 
     for i in range(len(x_train)):
         # 학습할 데이터 가져오기
         layer_0 = x_train[i]
 
         # layer_0째 데이터와 가중치1 곱하기
-        layer_1 = np.dot(layer_0, weight_1)
+        layer_1 = np.dot(layer_0, weights_1)
 
         # relu 함수 적용하기
         layer_1 = relu(layer_1)
@@ -69,7 +75,7 @@ for epoch in range(epochs):
         layer_1 *= dropout_mask * 2
 
         # layer_1과 가중치2 곱하기
-        layer_2 = np.dot(layer_1, weight_2)
+        layer_2 = np.dot(layer_1, weights_2)
 
         # loss값 계산
         training_loss += np.sum((y_train[i] - layer_2) ** 2)
@@ -77,14 +83,33 @@ for epoch in range(epochs):
         # error 구한 뒤 가중치 업데이트
         layer_2_delta = y_train[i] - layer_2
 
-        layer_1_delta = np.dot(weight_2, layer_2_delta) * relu2deriv(layer_1)
+        layer_1_delta = np.dot(weights_2, layer_2_delta) * relu2deriv(layer_1)
 
         layer_1_delta *= dropout_mask
 
-        weight_1 += learning_rate * np.outer(layer_0, layer_1_delta)
-        weight_1 += learning_rate * np.outer(layer_1, layer_2_delta)
+        weights_1 += learning_rate * np.outer(layer_0, layer_1_delta)
+        weights_2 += learning_rate * np.outer(layer_1, layer_2_delta)
         if i % 10000 == 0:
-            print("weights_1: ", weight_1)
-            print("weights_2: ", weight_2)
+            print("weights_1: ", weights_1)
+            print("weights_2: ", weights_2)
 
+    # training_loss 저장
+    save_training_loss.append(training_loss)
+    save_training_accurate_pred.append(training_accurate_predictions)
 
+    # @ 행렬곱 연산
+    results = relu(x_test @ weights_1) @ weights_2
+
+    # 오차 값 계산
+    test_loss = np.sum((test_labels - results) ** 2)
+
+    # 정확도 측정
+    test_accurate_predictions = np.sum(
+        np.argmax(results, axis=1) == np.argmax(test_labels, axis=1)
+    )
+
+    # test_loss 저장
+    save_test_loss.append(test_loss)
+    save_test_accurate_pred.append(test_accurate_predictions)
+
+    # print result
